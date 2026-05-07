@@ -4,7 +4,7 @@ Official landing page for [UpWell](https://github.com/nsk6704/UpWell) - An Andro
 
 ## Live Site
 
-[Visit Website](https://your-domain.com) <!-- Update with your deployed URL -->
+[Visit Website](https://upwell.sakethkashyap.dev) <!-- Update with your deployed URL -->
 
 ## About
 
@@ -16,33 +16,6 @@ This is the landing page for UpWell, showcasing:
 - **Getting Started**: Installation guide, FAQs
 - **iOS Waitlist**: Interest form for future iOS version
 
-## Quick Start
-
-### Local Development
-```bash
-# Clone the repository
-git clone https://github.com/nsk6704/upwell-website.git
-
-# Navigate to folder
-cd upwell-website
-
-# Open in browser
-open index.html
-# or simply double-click index.html
-```
-
-No build process needed - pure HTML, CSS, and vanilla JavaScript!
-
-## Project Structure
-
-```
-upwell-website/
-├── index.html      # Main landing page
-├── styles.css      # All styling (1100+ lines)
-├── script.js       # Interactions and animations
-├── icon.png        # App icon/logo
-├── README.md       # Documentation
-```
 
 ## Key Features
 
@@ -52,46 +25,6 @@ upwell-website/
 - **Fast Loading**: No build tools, minimal dependencies
 - **SEO Friendly**: Semantic HTML, meta tags
 
-## Customization
-
-### Colors (CSS Variables in `styles.css`)
-```css
---primary: #2563eb;      /* Blue */
---secondary: #14b8a6;    /* Teal */
---accent: #fbbf24;       /* Yellow */
---success: #10b981;      /* Green */
-```
-
-### Update Links
-Search and replace in `index.html`:
-- GitHub repo: `https://github.com/nsk6704/UpWell`
-- Download APK: Update release link in Getting Started section
-- iOS form: Replace Google Form URL (line 506)
-
-### Add Logo
-Replace `icon.png` with your app icon (recommended: 512x512px PNG with transparency)
-
-## Deployment
-
-### GitHub Pages (Recommended - Free)
-1. Push to GitHub
-2. Go to **Settings** → **Pages**
-3. Source: **Deploy from branch**
-4. Branch: **main** → **/ (root)**
-5. Live at: `https://nsk6704.github.io/upwell-website/`
-
-### Vercel (Free)
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-```
-
-### Netlify (Free)
-1. Drag & drop folder to [Netlify Drop](https://app.netlify.com/drop)
-2. Or connect GitHub repo for continuous deployment
 
 ## Contact
 
