@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Credify - Your all-in-one companion for tracking habits, finances, and well-being">
-    <title>Credify - Personal Wellness & Finance Tracker</title>
+    <meta name="description" content="UpWell - Your all-in-one companion for tracking habits, finances, and well-being">
+    <title>UpWell - Personal Wellness & Finance Tracker</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
@@ -12,16 +12,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
     <link rel="mask-icon" href="icon.png" color="#2563eb">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Optimized -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome - Async Load -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -29,10 +30,10 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <img src="icon.png" alt="Credify Logo" class="logo-img">
-                    <span>Credify</span>
+                    <img src="icon.png" alt="UpWell Logo" class="logo-img">
+                    <span>UpWell</span>
                 </div>
-                <a href="https://github.com/nsk6704/Credify" target="_blank" class="btn-nav-cta nav-center">
+                <a href="https://github.com/nsk6704/UpWell" target="_blank" class="btn-nav-cta nav-center">
                     <i class="fas fa-rocket"></i> Github Repo
                 </a>
                 <ul class="nav-menu" id="navMenu">
@@ -63,10 +64,10 @@
                     Your All-in-One Companion for <span class="gradient-text">Better Living</span>
                 </h1>
                 <p class="hero-description">
-                    Track habits, manage finances, and cultivate well-being. Credify brings all aspects of your personal wellness into one beautifully designed mobile experience.
+                    Track habits, manage finances, and cultivate well-being. UpWell brings all aspects of your personal wellness into one beautifully designed mobile experience.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://github.com/nsk6704/Credify" target="_blank" class="btn-hero">
+                    <a href="https://github.com/nsk6704/UpWell" target="_blank" class="btn-hero">
                         <i class="fab fa-github"></i>
                         Get Started
                     </a>
@@ -148,6 +149,11 @@
                             <h4>Spending Analytics</h4>
                             <p>Understand your spending patterns at a glance</p>
                         </div>
+                        <div class="feature-card">
+                            <i class="fas fa-layer-group"></i>
+                            <h4>Multiple Budgets</h4>
+                            <p>Set overall budgets plus per-category limits</p>
+                        </div>
                     </div>
                 </div>
 
@@ -173,6 +179,11 @@
                             <h4>Hydration Tracking</h4>
                             <p>Track daily water intake with visual progress</p>
                         </div>
+                        <div class="feature-card">
+                            <i class="fas fa-weight"></i>
+                            <h4>Weight Tracker</h4>
+                            <p>Log weight, set goals, track progress with visual charts and kg/lb support</p>
+                        </div>
                     </div>
                 </div>
 
@@ -189,7 +200,7 @@
                     </div>
                     <div class="feature-grid">
                         <div class="feature-card">
-                            <i class="fas fa-meditation"></i>
+                            <i class="fas fa-brain"></i>
                             <h4>Meditation Sessions</h4>
                             <p>Log guided meditations and breathing exercises</p>
                         </div>
@@ -200,8 +211,8 @@
                         </div>
                         <div class="feature-card">
                             <i class="fas fa-heart"></i>
-                            <h4>Gratitude Practice</h4>
-                            <p>Daily gratitude logging for positive mindset</p>
+                            <h4>Gratitude Logging</h4>
+                            <p>Daily gratitude entries with weekly summaries and mood tracking</p>
                         </div>
                         <div class="feature-card">
                             <i class="fas fa-smile"></i>
@@ -243,8 +254,15 @@
                         <li>
                             <i class="fas fa-check-circle"></i>
                             <div>
-                                <strong>Visual Progress</strong>
-                                <span>See your growth across all life areas</span>
+                                <strong>Streak Calendar</strong>
+                                <span>GitHub-style heatmap tracking your consistency</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Weekly Summaries</strong>
+                                <span>Gratitude and progress aggregated weekly</span>
                             </div>
                         </li>
                     </ul>
@@ -265,15 +283,15 @@
         </div>
     </section>
 
-    <!-- Why Credify Section -->
-    <section class="why-credify">
+    <!-- Why UpWell Section -->
+    <section class="why-upwell">
         <div class="container">
             <div class="why-box">
                 <div class="why-icon">
-                    <i class="fas fa-lightbulb"></i>
+                    <i class="fas fa-seedling"></i>
                 </div>
-                <h3>Why "Credify"?</h3>
-                <p>The name comes from <strong>"credits"</strong> - every positive action you take earns you XP (experience points). It's about gamifying your journey to better living. Like earning credits in a game, each workout, expense tracked, or journal entry brings you closer to leveling up in real life.</p>
+                <h3>Why "UpWell"?</h3>
+                <p>UpWell represents <strong>uplifting your well-being</strong> - a holistic approach to living better. It's about growing upward in all aspects of life: financial health, physical wellness, and mental clarity. Every positive action earns XP, building streaks and leveling up your real-life journey toward a better you.</p>
             </div>
         </div>
     </section>
@@ -409,7 +427,7 @@
     <section id="getting-started" class="getting-started">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Getting Started with Credify</h2>
+                <h2 class="section-title">Getting Started with UpWell</h2>
                 <p class="section-subtitle">Everything you need to know to begin your journey</p>
             </div>
 
@@ -425,7 +443,7 @@
                         <span><i class="fas fa-check-circle"></i> Android 5.0+</span>
                         <span><i class="fas fa-check-circle"></i> ~50MB storage</span>
                     </div> -->
-                    <a href="https://github.com/nsk6704/Credify/releases" target="_blank" class="guide-link">
+                    <a href="https://github.com/nsk6704/UpWell/releases" target="_blank" class="guide-link">
                         Download APK <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -466,10 +484,12 @@
                     <h3>Customize Your Experience</h3>
                     <p>Access settings via the gear icon in the top-right corner in the <strong>Profile</strong> section. Tailor the app to match your lifestyle and preferences.</p>
                     <ul class="guide-features">
-                        <li><i class="fas fa-chevron-right"></i> Theme options: Light, Dark, or Auto mode</li>
-                        <li><i class="fas fa-chevron-right"></i> Set daily goals for expenses, workouts, water, and journals</li>
+                        <li><i class="fas fa-chevron-right"></i> Themes: Dark, Light, or Auto mode</li>
+                        <li><i class="fas fa-chevron-right"></i> Styles: Modern, Minimal, Classic, Vibrant</li>
+                        <li><i class="fas fa-chevron-right"></i> Set daily goals for expenses, workouts, water, weight</li>
                         <li><i class="fas fa-chevron-right"></i> Choose flexible or strict streak tracking</li>
                         <li><i class="fas fa-chevron-right"></i> Export & import your data as JSON backups</li>
+                        <li><i class="fas fa-chevron-right"></i> Weight unit: kg or lb</li>
                     </ul>
                     <div class="privacy-badges">
                         <span><i class="fas fa-download"></i> Data Export</span>
@@ -485,14 +505,14 @@
                             <i class="fas fa-shield-halved"></i>
                         </div>
                         <h4>Why install from unknown sources?</h4>
-                        <p>Credify is completely open source—every line of code is public on GitHub. The APK distribution keeps the app 100% free with no ads or tracking, unlike Play Store alternatives.</p>
+                        <p>UpWell is completely open source—every line of code is public on GitHub. The APK distribution keeps the app 100% free with no ads or tracking, unlike Play Store alternatives.</p>
                     </div>
                     <div class="faq-item">
                         <div class="faq-icon">
                             <i class="fas fa-database"></i>
                         </div>
                         <h4>Is my data safe?</h4>
-                        <p>Absolutely! All data is stored locally on your device. Credify never sends information to external servers. You have complete control—export or delete anytime.</p>
+                        <p>Absolutely! All data is stored locally on your device. UpWell never sends information to external servers. You have complete control—export or delete anytime.</p>
                     </div>
                     <!-- <div class="faq-item">
                         <div class="faq-icon">
@@ -506,7 +526,7 @@
                             <i class="fas fa-wifi"></i>
                         </div>
                         <h4>Works offline?</h4>
-                        <p>Yes! Credify works completely offline. All features are available without an internet connection since everything is stored locally.</p>
+                        <p>Yes! UpWell works completely offline. All features are available without an internet connection since everything is stored locally.</p>
                     </div>
                 </div>
             </div>
@@ -521,7 +541,7 @@
                 <div class="waitlist-icon">
                     <i class="fab fa-apple"></i>
                 </div>
-                <h2>Want Credify on iOS?</h2>
+                <h2>Want UpWell on iOS?</h2>
                 <p>Currently Android-only. Show your interest and we'll notify you when the iOS version is ready.</p>
                 <a href="https://forms.gle/Gt6n38YsoWCvdcJt6" class="btn-waitlist" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-apple"></i> Show Interest for iOS
@@ -538,11 +558,11 @@
                 <h2>Ready to Transform Your Daily Habits?</h2>
                 <p>Join the journey towards better financial health, physical wellness, and mental well-being.</p>
                 <div class="cta-buttons">
-                    <a href="https://github.com/nsk6704/Credify" target="_blank" class="btn-cta">
+                    <a href="https://github.com/nsk6704/UpWell" target="_blank" class="btn-cta">
                         <i class="fab fa-github"></i>
                         View on GitHub
                     </a>
-                    <a href="https://github.com/nsk6704/Credify/issues" target="_blank" class="btn-cta-outline">
+                    <a href="https://github.com/nsk6704/UpWell/issues" target="_blank" class="btn-cta-outline">
                         <i class="fas fa-bug"></i>
                         Report an Issue
                     </a>
@@ -557,8 +577,8 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <img src="icon.png" alt="Credify Logo" class="logo-img">
-                        <span>Credify</span>
+                        <img src="icon.png" alt="UpWell Logo" class="logo-img">
+                        <span>UpWell</span>
                     </div>
                     <p>Your all-in-one companion for tracking habits, finances, and well-being.</p>
                 </div>
@@ -567,15 +587,15 @@
                     <ul>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#tech-stack">Tech Stack</a></li>
-                        <li><a href="https://github.com/nsk6704/Credify" target="_blank">Documentation</a></li>
+                        <li><a href="https://github.com/nsk6704/UpWell" target="_blank">Documentation</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="https://github.com/nsk6704/Credify" target="_blank">GitHub</a></li>
-                        <li><a href="https://github.com/nsk6704/Credify/issues" target="_blank">Issues</a></li>
-                        <li><a href="https://github.com/nsk6704/Credify/blob/main/LICENSE" target="_blank">License</a></li>
+                        <li><a href="https://github.com/nsk6704/UpWell" target="_blank">GitHub</a></li>
+                        <li><a href="https://github.com/nsk6704/UpWell/issues" target="_blank">Issues</a></li>
+                        <li><a href="https://github.com/nsk6704/UpWell/blob/main/LICENSE" target="_blank">License</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -594,7 +614,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Credify. Licensed under BSD 3-Clause License.</p>
+                <p>&copy; 2026 UpWell. Licensed under BSD 3-Clause License.</p>
                 <p>Made by Saketh</p>
             </div>
         </div>

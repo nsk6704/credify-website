@@ -1,6 +1,6 @@
-# Credify Website
+# UpWell Website
 
-Official landing page for [Credify](https://github.com/nsk6704/Credify) - An Android app for tracking habits, finances, and well-being with gamification.
+Official landing page for [UpWell](https://github.com/nsk6704/UpWell) - An Android app for tracking habits, finances, and well-being with gamification.
 
 ## Live Site
 
@@ -8,7 +8,7 @@ Official landing page for [Credify](https://github.com/nsk6704/Credify) - An And
 
 ## About
 
-This is the landing page for Credify, showcasing:
+This is the landing page for UpWell, showcasing:
 - **Features**: Financial tracking, health & fitness, mindfulness tools
 - **Gamification**: XP system, level progression, streaks
 - **Tech Stack**: React Native, Expo, TypeScript, SQLite
@@ -21,10 +21,10 @@ This is the landing page for Credify, showcasing:
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/nsk6704/credify-website.git
+git clone https://github.com/nsk6704/upwell-website.git
 
 # Navigate to folder
-cd credify-website
+cd upwell-website
 
 # Open in browser
 open index.html
@@ -36,7 +36,7 @@ No build process needed - pure HTML, CSS, and vanilla JavaScript!
 ## Project Structure
 
 ```
-credify-website/
+upwell-website/
 ├── index.html      # Main landing page
 ├── styles.css      # All styling (1100+ lines)
 ├── script.js       # Interactions and animations
@@ -64,7 +64,7 @@ credify-website/
 
 ### Update Links
 Search and replace in `index.html`:
-- GitHub repo: `https://github.com/nsk6704/Credify`
+- GitHub repo: `https://github.com/nsk6704/UpWell`
 - Download APK: Update release link in Getting Started section
 - iOS form: Replace Google Form URL (line 506)
 
@@ -78,7 +78,7 @@ Replace `icon.png` with your app icon (recommended: 512x512px PNG with transpare
 2. Go to **Settings** → **Pages**
 3. Source: **Deploy from branch**
 4. Branch: **main** → **/ (root)**
-5. Live at: `https://nsk6704.github.io/credify-website/`
+5. Live at: `https://nsk6704.github.io/upwell-website/`
 
 ### Vercel (Free)
 ```bash
@@ -101,12 +101,12 @@ vercel
 
 ## License
 
-BSD 3-Clause License - See [Credify repository](https://github.com/nsk6704/Credify/blob/main/LICENSE) for details.
+BSD 3-Clause License - See [UpWell repository](https://github.com/nsk6704/UpWell/blob/main/LICENSE) for details.
 
 ## Related
 
-- **Main App**: [Credify Android App](https://github.com/nsk6704/Credify)
-- **Releases**: [Download APK](https://github.com/nsk6704/Credify/releases)
+- **Main App**: [UpWell Android App](https://github.com/nsk6704/UpWell)
+- **Releases**: [Download APK](https://github.com/nsk6704/UpWell/releases)
 
 ---
 

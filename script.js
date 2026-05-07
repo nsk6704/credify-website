@@ -179,6 +179,6 @@ document.querySelectorAll('.btn-hero, .btn-cta, .btn-primary').forEach(button =>
 });
 
 // Console message for developers
-console.log('%cCredify', 'font-size: 32px; font-weight: bold; background: linear-gradient(135deg, #2563eb 0%, #14b8a6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
+console.log('%cUpWell', 'font-size: 32px; font-weight: bold; background: linear-gradient(135deg, #2563eb 0%, #14b8a6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
 console.log('%cBuilt with React Native, TypeScript, and Expo', 'font-size: 14px; color: #475569;');
-console.log('%cGitHub: https://github.com/nsk6704/Credify', 'font-size: 12px; color: #2563eb;');
+console.log('%cGitHub: https://github.com/nsk6704/UpWell', 'font-size: 12px; color: #2563eb;');
