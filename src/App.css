@@ -30,9 +30,18 @@ html {
     scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
+}
+
+p {
+    line-height: 1.8;
+}
+
 body {
     font-family:
-        "Inter",
+        "Google Sans Flex",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -44,6 +53,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    font-weight: 500;
 }
 
 .container {
@@ -92,20 +102,17 @@ body {
     color: white;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
     transition: background 0.2s ease;
-}
-
-.btn-nav-cta:hover {
-    background: #1e40af;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 24px;
     font-weight: 700;
     color: var(--primary);
@@ -193,9 +200,10 @@ body {
 }
 
 .hero-title {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 64px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.1;
     margin-bottom: 24px;
     color: var(--text-primary);
@@ -225,21 +233,13 @@ body {
     align-items: center;
     gap: 10px;
     padding: 16px 32px;
-    background: #2563eb;
+    background: var(--primary);
     color: white;
+    border: 2px solid var(--primary);
     border-radius: var(--radius);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.btn-hero:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.4);
-    background: #1e40af;
 }
 
 .btn-secondary {
@@ -252,14 +252,8 @@ body {
     border: 2px solid var(--primary);
     border-radius: var(--radius);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
-    transition: all 0.2s ease;
-}
-
-.btn-secondary:hover {
-    background: var(--primary);
-    color: white;
 }
 
 .hero-stats {
@@ -345,7 +339,8 @@ body {
 }
 
 .section-title {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 16px;
@@ -396,7 +391,8 @@ body {
 }
 
 .category-header h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 28px;
     font-weight: 700;
     color: var(--text-primary);
@@ -436,7 +432,7 @@ body {
 
 .feature-card h4 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 12px;
 }
@@ -474,7 +470,8 @@ body {
 }
 
 .gamification-text h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -630,7 +627,8 @@ body {
 }
 
 .why-box h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 28px;
     font-weight: 700;
     color: var(--text-primary);
@@ -645,7 +643,7 @@ body {
 
 .why-box strong {
     color: var(--primary);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Tech Stack Section */
@@ -683,7 +681,7 @@ body {
 
 .tech-card h4 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 8px;
 }
@@ -763,7 +761,8 @@ body {
 }
 
 .privacy-text h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -836,7 +835,8 @@ body {
 }
 
 .guide-card h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 26px;
     font-weight: 700;
     color: var(--text-primary);
@@ -867,7 +867,7 @@ body {
     gap: 10px;
     font-size: 14px;
     color: var(--text-primary);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .requirements i {
@@ -913,7 +913,7 @@ body {
     border-radius: 50px;
     font-size: 13px;
     color: var(--text-primary);
-    font-weight: 600;
+    font-weight: 700;
     border: 1px solid var(--border);
 }
 
@@ -932,7 +932,7 @@ body {
     color: white;
     text-decoration: none;
     border-radius: var(--radius);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
     transition: all 0.3s ease;
 }
@@ -956,7 +956,8 @@ body {
 }
 
 .faq-title {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 36px;
     font-weight: 700;
     color: var(--text-primary);
@@ -1041,7 +1042,8 @@ body {
 }
 
 .waitlist-content h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 36px;
     font-weight: 700;
     color: var(--text-primary);
@@ -1056,6 +1058,9 @@ body {
 }
 
 .btn-waitlist {
+    border: 2px solid transparent;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1064,15 +1069,14 @@ body {
     color: white;
     border-radius: var(--radius);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.2);
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-waitlist:hover {
     background: #334155;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(30, 41, 59, 0.3);
 }
 
@@ -1082,6 +1086,10 @@ body {
 
 .btn-waitlist:hover i:last-child {
     transform: translateX(4px);
+}
+
+.btn-waitlist i:last-child {
+    transition: transform 0.3s ease;
 }
 
 .waitlist-note {
@@ -1106,7 +1114,8 @@ body {
 }
 
 .cta-content h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -1132,18 +1141,11 @@ body {
     padding: 16px 32px;
     background: white;
     color: var(--primary);
+    border: 2px solid white;
     border-radius: var(--radius);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.btn-cta:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.3);
 }
 
 .btn-cta-outline {
@@ -1156,14 +1158,8 @@ body {
     border: 2px solid white;
     border-radius: var(--radius);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
-    transition: all 0.2s ease;
-}
-
-.btn-cta-outline:hover {
-    background: white;
-    color: var(--primary);
 }
 
 /* Footer */
@@ -1194,7 +1190,7 @@ body {
 
 .footer-column h4 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 12px;
 }
 
@@ -1236,7 +1232,6 @@ body {
 
 .social-links a:hover {
     background: var(--primary);
-    transform: translateY(-2px);
 }
 
 .footer-bottom {
@@ -1376,7 +1371,6 @@ body {
         flex-direction: column;
         width: 100%;
     }
-
     .btn-cta,
     .btn-cta-outline {
         width: 100%;
