@@ -1,3 +1,6 @@
+import { Bug } from 'lucide-react'
+import { FaGithub } from 'react-icons/fa'
+
 export default function CTA() {
   return (
     <section className="cta">
@@ -7,11 +10,11 @@ export default function CTA() {
           <p>Join the journey towards better financial health, physical wellness, and mental well-being.</p>
           <div className="cta-buttons">
             <a href="https://github.com/nsk6704/UpWell" target="_blank" className="btn-cta" rel="noreferrer">
-              <i className="fab fa-github"></i>
+              <FaGithub size={20} />
               View on GitHub
             </a>
             <a href="https://github.com/nsk6704/UpWell/issues" target="_blank" className="btn-cta-outline" rel="noreferrer">
-              <i className="fas fa-bug"></i>
+              <Bug size={20} />
               Report an Issue
             </a>
           </div>

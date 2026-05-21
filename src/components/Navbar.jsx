@@ -1,3 +1,5 @@
+import { FaGithub } from 'react-icons/fa'
+
 export default function Navbar({ menuOpen, setMenuOpen }) {
   const handleNavClick = (e, href) => {
     e.preventDefault()
@@ -19,7 +21,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
             <span>UpWell</span>
           </div>
           <a href="https://github.com/nsk6704/UpWell" target="_blank" className="btn-nav-cta nav-center" rel="noreferrer">
-            <i className="fas fa-rocket"></i> Github Repo
+            <FaGithub size={16} /> <span className="btn-text">GitHub Repo</span>
           </a>
           <ul className={`nav-menu${menuOpen ? ' active' : ''}`} id="navMenu">
             <li><a href="#features" onClick={e => handleNavClick(e, '#features')}>Features</a></li>

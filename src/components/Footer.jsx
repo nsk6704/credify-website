@@ -1,3 +1,6 @@
+import { Briefcase, Mail } from 'lucide-react'
+import { FaGithub } from 'react-icons/fa'
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -30,13 +33,13 @@ export default function Footer() {
             <h4>Connect</h4>
             <div className="social-links">
               <a href="https://github.com/nsk6704" target="_blank" aria-label="GitHub" rel="noreferrer">
-                <i className="fab fa-github"></i>
+                <FaGithub size={18} />
               </a>
               <a href="https://www.linkedin.com/in/saketh-kashyap-nagendra/" target="_blank" aria-label="LinkedIn" rel="noreferrer">
-                <i className="fab fa-linkedin"></i>
+                <Briefcase size={18} />
               </a>
               <a href="mailto:sakethkashyap.nagendra@gmail.com" aria-label="Email">
-                <i className="fas fa-envelope"></i>
+                <Mail size={18} />
               </a>
             </div>
           </div>
