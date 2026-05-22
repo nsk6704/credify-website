@@ -9,7 +9,7 @@ const categories = [
     title: 'Financial Management',
     desc: 'Track your financial health with comprehensive tools',
     icon: Wallet,
-    gradient: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)',
+    color: '#10B981',
     features: [
       { icon: Receipt, title: 'Expense Tracking', desc: 'Log transactions with customizable categories' },
       { icon: ChartPie, title: 'Budget Monitoring', desc: 'Set monthly budgets and track spending in real-time' },
@@ -22,7 +22,7 @@ const categories = [
     title: 'Health & Fitness',
     desc: 'Monitor your physical well-being and build consistency',
     icon: HeartPulse,
-    gradient: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+    color: '#F97316',
     features: [
       { icon: Dumbbell, title: 'Workout Logging', desc: 'Record exercises with duration, calories, and notes' },
       { icon: Droplet, title: 'Hydration Tracking', desc: 'Track daily water intake with visual progress' },
@@ -33,7 +33,7 @@ const categories = [
     title: 'Mindfulness & Well-being',
     desc: 'Cultivate mental wellness through daily practices',
     icon: Flower2,
-    gradient: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)',
+    color: '#06B6D4',
     features: [
       { icon: Brain, title: 'Meditation Sessions', desc: 'Log guided meditations and breathing exercises' },
       { icon: BookOpen, title: 'Digital Journaling', desc: 'Write unlimited entries with mood tracking' },
@@ -45,34 +45,48 @@ const categories = [
 
 export default function Features() {
   return (
-    <section id="features" className="features">
-      <div className="container">
-        <div className="section-header">
-          <h2 className="section-title">Comprehensive Feature Set</h2>
-          <p className="section-subtitle">Everything you need to build lasting healthy routines and financial discipline</p>
+    <section id="features" className="py-36 bg-background">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto mb-24">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            Comprehensive Feature Set
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Everything you need to build lasting healthy routines and financial discipline
+          </p>
         </div>
-        <div className="feature-categories">
+        <div className="flex flex-col gap-24">
           {categories.map((cat, ci) => {
             const Icon = cat.icon
             return (
-              <div className="feature-category" key={ci}>
-                <div className="category-header">
-                  <div className="category-icon" style={{ background: cat.gradient }}>
-                    <Icon />
+              <div
+                key={ci}
+                className="animate-[fadeInUp_0.8s_ease_forwards] opacity-0"
+                style={{ animationDelay: `${ci * 0.2}s` }}
+              >
+                <div className="flex items-center gap-6 mb-10 pb-10 border-b">
+                  <div
+                    className="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
+                    style={{ backgroundColor: cat.color + '20', color: cat.color }}
+                  >
+                    <Icon size={28} />
                   </div>
                   <div>
-                    <h3>{cat.title}</h3>
-                    <p>{cat.desc}</p>
+                    <h3 className="text-2xl font-bold">{cat.title}</h3>
+                    <p className="text-muted-foreground">{cat.desc}</p>
                   </div>
                 </div>
-                <div className="feature-grid">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                   {cat.features.map((feat, fi) => {
                     const FeatIcon = feat.icon
                     return (
-                      <div className="feature-card" key={fi}>
-                        <FeatIcon />
-                        <h4>{feat.title}</h4>
-                        <p>{feat.desc}</p>
+                      <div
+                        key={fi}
+                        className="bg-card rounded-xl border p-8 hover:shadow-md hover:border-primary/30 transition-all"
+                      >
+                        <FeatIcon className="w-10 h-10 rounded-lg p-2 mb-5" style={{ color: cat.color, backgroundColor: cat.color + '15' }} />
+                        <h4 className="text-lg font-semibold mb-3">{feat.title}</h4>
+                        <p className="text-sm text-muted-foreground">{feat.desc}</p>
                       </div>
                     )
                   })}
